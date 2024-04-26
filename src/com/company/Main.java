@@ -1,10 +1,6 @@
 package com.company;
 
-import com.company.distance.CombinedDistanceServiceImpl;
-import com.company.distance.DistanceService;
-import com.company.distance.EuclidDistanceServiceImpl;
-import com.company.distance.ManhattanDistanceServiceImpl;
-
+import com.company.distance.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,12 +14,12 @@ public class Main {
         List<Customer> customers = new ArrayList<>();
         Map<Customer, Double> customerDistances = new HashMap<>();
         // Sample data
-        customers.add(new Customer(22, 35000.0, "yes"));
-        customers.add(new Customer(25, 40000.0, "yes"));
-        customers.add(new Customer(28, 45000.0, "no"));
-        customers.add(new Customer(29, 48000.0, "yes"));
+        customers.add(new Customer(22, 35000, "yes"));
+        customers.add(new Customer(25, 40000, "yes"));
+        customers.add(new Customer(28, 45000, "no"));
+        customers.add(new Customer(29, 48000, "yes"));
         // Target customer
-        Customer target = new Customer(50, 80000.0);
+        Customer target = new Customer(50, 80000);
         // KNN algorithm
         int k = 3;
         for (Customer customer : customers) {

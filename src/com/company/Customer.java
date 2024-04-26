@@ -2,16 +2,15 @@ package com.company;
 
 public class Customer {
     private Integer age;
-    private Double income;
+    private Integer income;
     private String className;
 
-    public Customer(Integer age, Double income) {
+    public Customer(Integer age, Integer income) {
         this.age = age;
         this.income = income;
     }
 
-    public Customer(Integer age, Double income, String className) {
-
+    public Customer(Integer age, Integer income, String className) {
         this.age = age;
         this.income = income;
         this.className = className;
@@ -25,11 +24,11 @@ public class Customer {
         this.age = age;
     }
 
-    public Double getIncome() {
+    public Integer getIncome() {
         return income;
     }
 
-    public void setIncome(Double income) {
+    public void setIncome(Integer income) {
         this.income = income;
     }
 
