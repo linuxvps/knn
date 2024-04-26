@@ -37,4 +37,5 @@ public class Main {
         String classifyTarget = knnService.classifyTarget(kNearestNeighbors);
         System.out.println("Classified as: " + classifyTarget);
     }
+
 }
